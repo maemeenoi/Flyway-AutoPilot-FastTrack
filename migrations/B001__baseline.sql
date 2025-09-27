@@ -6,19 +6,19 @@ PRINT N'Creating schemas'
 GO
 IF SCHEMA_ID(N'Customers') IS NULL
 EXEC sp_executesql N'CREATE SCHEMA [Customers]
-AUTHORIZATION [dbo]'
+AUTHORIZATION [harness-delegate]'
 GO
 IF SCHEMA_ID(N'Logistics') IS NULL
 EXEC sp_executesql N'CREATE SCHEMA [Logistics]
-AUTHORIZATION [dbo]'
+AUTHORIZATION [harness-delegate]'
 GO
 IF SCHEMA_ID(N'Operation') IS NULL
 EXEC sp_executesql N'CREATE SCHEMA [Operation]
-AUTHORIZATION [dbo]'
+AUTHORIZATION [harness-delegate]'
 GO
 IF SCHEMA_ID(N'Sales') IS NULL
 EXEC sp_executesql N'CREATE SCHEMA [Sales]
-AUTHORIZATION [dbo]'
+AUTHORIZATION [harness-delegate]'
 GO
 PRINT N'Creating [Sales].[Customers]'
 GO
